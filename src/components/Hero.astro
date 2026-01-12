@@ -42,16 +42,28 @@
     </div>
   </div>
 
-  <div class="relative flex items-center justify-center">
-    <!-- Abstract Background Blob -->
-    <div class="absolute -z-10 h-[300px] w-[300px] animate-blob rounded-full bg-accent/30 blur-3xl filter md:h-[500px] md:w-[500px]"></div>
-    
-    <div class="relative h-64 w-64 overflow-hidden rounded-2xl border-2 border-white/10 bg-gray-900/50 shadow-2xl backdrop-blur-sm transition-transform hover:scale-105 md:h-96 md:w-80 rotate-3 hover:rotate-0 duration-300">
-      <img 
+  <!-- Hero Image -->
+  <div class="relative mt-12 flex items-center justify-center md:mt-0">
+    <div class="relative animate-float">
+      <!-- Glow Effect -->
+      <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-violet-500 to-violet-800 opacity-30 blur-2xl transition-opacity duration-500 group-hover:opacity-50"></div>
+      
+      <!-- Image Container -->
+      <div class="relative h-64 w-64 overflow-hidden rounded-full border-2 border-white/10 bg-gray-900 shadow-2xl md:h-96 md:w-96">
+        <img 
         src="/images/perfil.webp" 
-        alt="Jeysson Sánchez" 
-        class="h-full w-full object-cover opacity-80 transition-opacity hover:opacity-100"
-      />
+          alt="Jeysson Sánchez" 
+          class="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
+        />
+      </div>
+
+      <!-- Floating Tech Icons (Decorative) -->
+      <div class="absolute -right-4 top-10 animate-bounce delay-100 rounded-xl border border-white/10 bg-black/50 p-3 backdrop-blur-md">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" class="h-8 w-8" alt="Flutter" />
+      </div>
+      <div class="absolute -left-8 bottom-20 animate-bounce delay-300 rounded-xl border border-white/10 bg-black/50 p-3 backdrop-blur-md">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" class="h-8 w-8" alt="Angular" />
+      </div>
     </div>
   </div>
 </section>

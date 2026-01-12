@@ -7,7 +7,7 @@ import { projects, type Project } from '../data/projects';
 export const ProjectsGallery = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 6;
+  const itemsPerPage = 3; // Changed from 6 to 3 as requested
   const totalPages = Math.ceil(projects.length / itemsPerPage);
   
   const isSliderMode = projects.length > itemsPerPage;
